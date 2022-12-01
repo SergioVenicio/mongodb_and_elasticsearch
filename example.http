@@ -1,0 +1,32 @@
+# Post Create
+POST http://localhost:3333/post HTTP/2.0
+Content-Type: application/json
+{
+	"title": "test",
+	"content": "test"
+}
+###
+
+# List all Posts
+GET http://localhost:3333/post HTTP/2.0
+Content-Type: application/json
+###
+
+@id = 6388892cc6f038b40aa08f82
+
+
+# Get Post By ID
+GET http://localhost:3333/post/{{id}} HTTP/2.0
+Content-Type: application/json
+###
+
+
+# Update Post
+PUT http://localhost:3333/post/{{id}} HTTP/2.0
+Content-Type: application/json
+
+{
+	"title": "test updt",
+	"content": "test"
+}
+###
