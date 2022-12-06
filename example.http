@@ -1,6 +1,7 @@
 # Post Create
 POST http://localhost:3333/post HTTP/2.0
 Content-Type: application/json
+
 {
 	"title": "test",
 	"content": "test"
