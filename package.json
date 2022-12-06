@@ -15,6 +15,7 @@
   },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -30,6 +31,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^18.11.9",
     "@types/pino": "^7.0.5",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.8",
     "i": "^0.3.7",
     "jest": "^29.3.1",
@@ -53,5 +55,10 @@
     "mongoose": "^6.7.3",
     "pino": "^8.7.0",
     "slugify": "^1.6.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
