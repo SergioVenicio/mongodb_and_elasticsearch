@@ -13,6 +13,11 @@
     "start:consumer:post:update": "ts-node-dev --transpile-only src/consumers/posts/update.ts",
     "start:consumers": "(npm run start:consumer:post:create) & (npm run start:consumer:post:update)"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
@@ -25,7 +30,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^18.11.9",
     "@types/pino": "^7.0.5",
-    "husky": "^8.0.2",
+    "husky": "^4.3.8",
     "i": "^0.3.7",
     "jest": "^29.3.1",
     "mongodb-memory-server": "^8.10.1",
