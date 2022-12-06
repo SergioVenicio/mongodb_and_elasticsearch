@@ -1,0 +1,12 @@
+PUT /posts
+{
+  "mappings": {
+    "properties": {
+      "id": {"type": "text"},
+      "content": {"type": "text"},
+      "slug": {"type": "text"},
+      "createdAt": {"type": "date"},
+      "updatedAt": {"type": "date"}
+    }
+  }
+}
