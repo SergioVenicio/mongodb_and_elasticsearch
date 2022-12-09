@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start:dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
-    "build": "tsc --build",
+    "build": "rm -rf ./build && tsc --build",
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "npm build && node start build/index.js",
